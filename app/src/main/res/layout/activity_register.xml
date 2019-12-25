@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/login_photo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        />
+    <TextView
+        android:id="@+id/regPageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="200dp"
+        android:text="Register Here"
+        android:fontFamily="@font/nunito_semibold"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/regPageLogo"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/nunito_semibold"
+        android:background="@drawable/input_background"
+        android:padding="4dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_email"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:fontFamily="@font/nunito_semibold"
+        android:background="@drawable/input_background"
+        android:padding="4dp"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:padding="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/border_button"
+        />
+
+    <Button
+        android:id="@+id/already_have_account_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_button"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Already have an Account ?"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/border_button"
+        />
+
+
+</RelativeLayout>

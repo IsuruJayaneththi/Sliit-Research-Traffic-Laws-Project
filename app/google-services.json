@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9272437273",
+    "firebase_url": "https://sliit-law-research-project.firebaseio.com",
+    "project_id": "sliit-law-research-project",
+    "storage_bucket": "sliit-law-research-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9272437273:android:8bb716bafca5e1c1f41888",
+        "android_client_info": {
+          "package_name": "com.example.sliitlawresearchproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9272437273-cqijhe88uhirsq22m40dt5l38sdflh9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sliitlawresearchproject",
+            "certificate_hash": "908dba867f2210d5017d85e31973929a367b793c"
+          }
+        },
+        {
+          "client_id": "9272437273-3v2ep28objshn2e1242ds7uj29sk2i5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsazV3DQYGla3yzhDYlxkqSdwahmixMQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9272437273-3v2ep28objshn2e1242ds7uj29sk2i5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

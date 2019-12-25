@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/login_photo"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:id="@+id/loginPageLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="200dp"
+                android:text="Please Login "
+                android:fontFamily="@font/nunito_semibold"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/loginPageLogo"
+                android:hint="Email..."
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/email"
+                android:padding="4dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/login_email"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/input_background"
+                android:padding="4dp"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                />
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:padding="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Login"
+                android:fontFamily="@font/nunito_semibold"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/border_button"
+                />
+
+
+            <Button
+                android:id="@+id/need_new_account_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_button"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Need a new Account ?"
+                android:fontFamily="@font/nunito_semibold"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/border_button"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@mipmap/background"
+    tools:context=".SummerizeActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Your Problem :-"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textSize="22sp"
+                android:textColor="@color/textTabBright"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/problem_input"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/rich_grey"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:hint=" Your Problem"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:paddingBottom="12dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/rich_black"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Our Solution :-"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textSize="22sp"
+                android:textColor="@color/textTabBright"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/problem_solution"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/rich_grey"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="top|left"
+                android:hint=" Description Of Solution"
+                android:inputType="textMultiLine"
+                android:paddingLeft="25dp"
+                android:paddingTop="12dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/rich_black"/>
+        </TableRow>
+
+
+
+
+        <TableRow>
+            <Button
+                android:id="@+id/sum_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/border_button"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Summerize Solution"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="No Of Lines In Summery :-"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textSize="22sp"
+                android:textColor="@color/textTabBright"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/line_of_description"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/rich_grey"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:hint="No Of Lines In Summerized Description"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:paddingBottom="12dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/rich_black"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Summerized Description :-"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textSize="22sp"
+                android:textColor="@color/textTabBright"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/summery_of_description"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/rich_grey"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="top|left"
+                android:hint=" Summery Of Description"
+                android:inputType="textMultiLine"
+                android:paddingLeft="25dp"
+                android:paddingTop="12dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/rich_black" />
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+</ScrollView>

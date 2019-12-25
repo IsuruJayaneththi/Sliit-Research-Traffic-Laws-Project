@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".AboutUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_full_size" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/app_logo"
+            android:autoLink="email"
+            android:clickable="true"
+            android:text="Traffic Laws \nv1.0.7 \n___________"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/app_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/app_name"
+            android:autoLink="email"
+            android:clickable="true"
+            android:text="Description is the fiction-writing mode for transmitting a mental image of the particulars of a story. Together with dialogue, narration, exposition, and summarization, description is one of the most widely recognized of the fiction-writing modes."
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_1">
+
+
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit_profile" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/user_pic"
+            android:autoLink="email"
+            android:clickable="true"
+            android:text="Isuru Jayaneththi"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/email_pic"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/user_pic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_pic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/email_pic"
+            android:autoLink="email"
+            android:clickable="true"
+            android:text="it16040236@my.sliit.lk"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/privacy_pic"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/email_pic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/privacy" />
+
+        <TextView
+            android:id="@+id/privacy_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_pic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/privacy_pic"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="https://drive.google.com/open?id=11PyzUUZUt0VPozrEJ2OFT8oFtRghIxJT"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/sliit_logo"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/layout_2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sliit_logo" />
+
+
+
+</RelativeLayout>

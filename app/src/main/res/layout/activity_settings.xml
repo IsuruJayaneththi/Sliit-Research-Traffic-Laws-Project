@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".SettingsActivity">
+
+
+    <TextView
+        android:id="@+id/loginPageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Profile Management"
+        android:fontFamily="@font/nunito_semibold"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="27sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginPageLogo"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_image"
+        />
+
+    <EditText
+        android:id="@+id/set_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set_profile_image"
+        android:inputType="textMultiLine"
+        android:hint="username"
+        android:drawableStart="@drawable/edit_profile"
+        android:fontFamily="@font/nunito_semibold"
+        android:background="@drawable/input_background"
+        android:padding="4dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        />
+
+    <EditText
+        android:id="@+id/set_profile_status"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/set_user_name"
+        android:inputType="textMultiLine"
+        android:hint="Your Job / Position"
+        android:drawableStart="@drawable/edit_status"
+        android:fontFamily="@font/nunito_semibold"
+        android:background="@drawable/input_background"
+        android:padding="4dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        />
+
+
+    <Button
+        android:id="@+id/update_settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_profile_status"
+        android:text="Update Profile"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/border_button"
+        android:padding="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
